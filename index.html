@@ -1,0 +1,38 @@
+<html lang="nl">
+<head>
+    <title>lizzies rekenmachine!</title>
+    <link href="index.css"
+          rel="stylesheet" />
+</head>
+<body>
+<h1>hallo ik ben lizzie</h1>
+<form id="rekenmachine">
+    <div class="field">
+        <label for="cijfer1">cijfer</label>
+        <input id="cijfer1"
+               type="number"
+               max="1000"
+               min="-10" />
+    </div>
+    
+    <select id="bewerking">
+        <option value="delen">:</option>
+        <option value="som">+</option>
+        <option value="aftrekken">-</option>
+        <option value="maal">x</option>
+    </select>
+    
+    <div class="field">
+        <label for="cijfer2">cijfer</label>
+        <input id="cijfer2"
+               type="number"
+               max="1000"
+               min="-10" />
+    </div>
+    =<span id="uitkomst">?</span>
+    <button type="submit">uitkomst</button>
+</form>
+
+<script src="index.js"></script>
+</body>
+</html>
